@@ -12,18 +12,18 @@ export class NativePlatformWidget extends Component {
     renderContent() {
         if (Platform.OS === 'ios') {
             if (isTablet && this.props.iosTabletContent?.length > 0) {
-                console.info("NativeOrientationWidget: render iOS tablet content");
+                // console.info("NativeOrientationWidget: render iOS tablet content");
                 return this.props.iosTabletContent;
             } else {
-                console.info("NativeOrientationWidget: render iOS");
+                // console.info("NativeOrientationWidget: render iOS");
                 return this.props.iosContent;
             }
         } else {
             if (isTablet && this.props.androidTabletContent?.length > 0) {
-                console.info("NativeOrientationWidget: render Android tablet content");
+                // console.info("NativeOrientationWidget: render Android tablet content");
                 return this.props.androidTabletContent;
             } else {
-                console.info("NativeOrientationWidget: render Android content");
+                // console.info("NativeOrientationWidget: render Android content");
                 return this.props.androidContent;
             }
         }
