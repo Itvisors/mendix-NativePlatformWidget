@@ -5,6 +5,8 @@ Show content specific for a platform
 - Allows platform/device specific content to be rendered
 - No need to detect the platform or device yourself
 - Option for tablet specific content
+- Widget does not add any padding or margin.
+- No events, if you need onClick, just use a container as widget content
 
 ## Usage
 - Place content in the iOS and Android drop zones for any device type
