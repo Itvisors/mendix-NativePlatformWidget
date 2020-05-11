@@ -24,10 +24,8 @@
     "url": "https://github.com/Marcel Groeneweg/nativeplatformwidget/issues"
   },
   "devDependencies": {
-    "@mendix/pluggable-widgets-tools": "^8.7.0",
+    "@mendix/pluggable-widgets-tools": "^8.9.2",
     "react-native-device-info": "^5.5.7"
   },
-  "dependencies": {
-    "big.js": "^5.2.2"
-  }
+  "dependencies": {}
 }
