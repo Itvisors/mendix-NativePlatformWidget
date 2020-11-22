@@ -1,6 +1,6 @@
 import { Component, createElement } from "react";
-import DeviceInfo from "react-native-device-info";
 import { Platform, View } from "react-native";
+import DeviceInfo from "react-native-device-info";
 
 const isTablet = DeviceInfo.isTablet();
 
