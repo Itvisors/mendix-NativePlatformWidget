@@ -10,7 +10,7 @@ export class NativePlatformWidget extends Component {
     }
 
     renderContent() {
-        if (Platform.OS === 'ios') {
+        if (Platform.OS === "ios") {
             if (isTablet && this.props.iosTabletContent?.length > 0) {
                 // console.info("NativeOrientationWidget: render iOS tablet content");
                 return this.props.iosTabletContent;
