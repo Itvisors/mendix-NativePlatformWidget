@@ -3,10 +3,9 @@
         supportedPlatform="Native"
         xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
-    <name>Native Platform Widget</name>
+    <name>Platform Widget</name>
     <description>Show content specific for a platform</description>
-    <icon>iVBORw0KGgoAAAANSUhEUgAAAEEAAABBCAYAAACO98lFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFzSURBVHhe7dpNSsNAAEDh1LVewpWCC0/i2k1P4ro3KdS1J3Eh2JWX0H1900wqFJHMTOhM7PsgJClNMrzmB0IXu92uO3cXcX7WjAAjoOiecH/90MwN5fXjZREXk2WfCS0FCErGkxWhtQCD3HF5T0DWPeG4eMn1WGqKsXgmwAgwAowAI8AIMAKMACPACDACjAAjwAgwAowAI6DKmyW2f2T2xHS3/2C8N6YVx3vuV2f6ZikG2DClBgjCNpu4j8nUuBzCGVBqin0cnPxyONr2im2/4vKf2O6S2We/9nPMkrEMqt4YxwYIUr6byqcDjAAjwAgwAowAI8AIMAKMACPACDACjAAjwAgwAowAI6BqhPjydJSU76aq8bb5ndlNv5ZtyzFvw8Jc3zav4rzEFPs4OHkEfqk1syXTdv9BmrDNMu5jMv7LHT4dMMmZ0JLZnQlhwDUvpUFWhBYG/pvccWVdDoOWLouSH6Yown/h0wFGgBFghK7rvgEeNYxjjzEKOwAAAABJRU5ErkJggg==
-    </icon>
+    <studioProCategory>Structure</studioProCategory>
     <properties>
         <propertyGroup caption="General">
             <property key="iosContent" type="widgets">
