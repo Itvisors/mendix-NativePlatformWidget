@@ -1,31 +1,28 @@
-import { Component, createElement } from "react";
 import { Platform, View } from "react-native";
 import DeviceInfo from "react-native-device-info";
+import { createElement } from "react";
 
 const isTablet = DeviceInfo.isTablet();
 
-export class NativePlatformWidget extends Component {
-    render() {
-        return <View>{this.renderContent()}</View>;
-    }
-
-    renderContent() {
+export function NativePlatformWidget(props) {
+    const renderContent = () => {
         if (Platform.OS === "ios") {
-            if (isTablet && this.props.iosTabletContent?.length > 0) {
+            if (isTablet && props.iosTabletContent?.length > 0) {
                 // console.info("NativeOrientationWidget: render iOS tablet content");
-                return this.props.iosTabletContent;
+                return props.iosTabletContent;
             } else {
                 // console.info("NativeOrientationWidget: render iOS");
-                return this.props.iosContent;
+                return props.iosContent;
             }
         } else {
-            if (isTablet && this.props.androidTabletContent?.length > 0) {
+            if (isTablet && props.androidTabletContent?.length > 0) {
                 // console.info("NativeOrientationWidget: render Android tablet content");
-                return this.props.androidTabletContent;
+                return props.androidTabletContent;
             } else {
                 // console.info("NativeOrientationWidget: render Android content");
-                return this.props.androidContent;
+                return props.androidContent;
             }
         }
-    }
+    };
+    return <View>{renderContent()}</View>;
 }
