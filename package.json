@@ -1,7 +1,7 @@
 {
   "name": "nativeplatformwidget",
   "widgetName": "NativePlatformWidget",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Show content specific for a platform",
   "copyright": "ITvisors 2020",
   "author": "Marcel Groeneweg",
@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@mendix/pluggable-widgets-tools": "^9.0.0",
-    "react-native-device-info": "^8.0.1"
+    "react-native-device-info": "8.0.1"
   },
   "dependencies": {}
 }
