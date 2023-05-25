@@ -1,7 +1,7 @@
 {
   "name": "nativeplatformwidget",
   "widgetName": "NativePlatformWidget",
-  "version": "2.2.1",
+  "version": "3.0.0",
   "description": "Show content specific for a platform",
   "copyright": "ITvisors 2020",
   "author": "Marcel Groeneweg",
@@ -22,8 +22,17 @@
     "release": "pluggable-widgets-tools release:native"
   },
   "devDependencies": {
-    "@mendix/pluggable-widgets-tools": "^9.0.0",
-    "react-native-device-info": "8.0.1"
+    "@mendix/pluggable-widgets-tools": "^9.24.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react-native-device-info": "8.7.1"
+  },
+  "resolutions": {
+    "react": "18.2.0",
+    "react-native": "0.70.7"
+  },
+  "overrides": {
+    "react": "18.2.0",
+    "react-native": "0.70.7"
+  }
 }
