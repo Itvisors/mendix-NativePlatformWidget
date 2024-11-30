@@ -34,11 +34,13 @@ public enum WorkflowEventType
 	CallMicroflowEnded(new java.lang.String[][] { new java.lang.String[] { "en_US", "Call Microflow Ended" } }),
 	WaitForNotificationStarted(new java.lang.String[][] { new java.lang.String[] { "en_US", "Wait for Notification Started" } }),
 	WaitForNotificationEnded(new java.lang.String[][] { new java.lang.String[] { "en_US", "Wait for Notification Ended" } }),
-	WaitForTimerStarted(new java.lang.String[][] { new java.lang.String[] { "en_US", "Wait for Timer Started" } }),
-	WaitForTimerEnded(new java.lang.String[][] { new java.lang.String[] { "en_US", "Wait for Timer Ended" } }),
+	WaitForTimerStarted(new java.lang.String[][] { new java.lang.String[] { "en_US", "Timer Started" } }),
+	WaitForTimerEnded(new java.lang.String[][] { new java.lang.String[] { "en_US", "Timer Ended" } }),
 	UserTaskStarted(new java.lang.String[][] { new java.lang.String[] { "en_US", "User Task Started" } }),
 	MultiUserTaskOutcomeSelected(new java.lang.String[][] { new java.lang.String[] { "en_US", "Multi-User Task Outcome Selected" } }),
-	UserTaskEnded(new java.lang.String[][] { new java.lang.String[] { "en_US", "User Task Ended" } });
+	UserTaskEnded(new java.lang.String[][] { new java.lang.String[] { "en_US", "User Task Ended" } }),
+	NonInterruptingTimerEventExecuted(new java.lang.String[][] { new java.lang.String[] { "en_US", "Non-Interrupting Timer Event Executed" } }),
+	InterruptingTimerEventExecuted(new java.lang.String[][] { new java.lang.String[] { "en_US", "Interrupting Timer Event Executed" } });
 
 	private final java.util.Map<java.lang.String, java.lang.String> captions;
 

@@ -18,7 +18,10 @@ public enum WorkflowActivityType
 	JumpTo(new java.lang.String[][] { new java.lang.String[] { "en_US", "Jump" } }),
 	MultiInputUserTask(new java.lang.String[][] { new java.lang.String[] { "en_US", "Multi-User Task" } }),
 	WaitForNotification(new java.lang.String[][] { new java.lang.String[] { "en_US", "Wait for Notification" } }),
-	WaitForTimer(new java.lang.String[][] { new java.lang.String[] { "en_US", "Wait for Timer" } });
+	WaitForTimer(new java.lang.String[][] { new java.lang.String[] { "en_US", "Timer" } }),
+	EndOfBoundaryEventPath(new java.lang.String[][] { new java.lang.String[] { "en_US", "End of Boundary Event Path" } }),
+	NonInterruptingTimerEvent(new java.lang.String[][] { new java.lang.String[] { "en_US", "Non-Interrupting Timer Event" } }),
+	InterruptingTimerEvent(new java.lang.String[][] { new java.lang.String[] { "en_US", "Interrupting Timer Event" } });
 
 	private final java.util.Map<java.lang.String, java.lang.String> captions;
 
