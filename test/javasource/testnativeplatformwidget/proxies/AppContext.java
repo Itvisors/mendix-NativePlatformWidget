@@ -48,7 +48,7 @@ public class AppContext implements com.mendix.systemwideinterfaces.core.IEntityP
 		if (appContextMendixObject == null) {
 			throw new java.lang.IllegalArgumentException("The given object cannot be null.");
 		}
-		if (!com.mendix.core.Core.isSubClassOf(entityName, appContextMendixObject.getType())) {
+		if (!appContextMendixObject.isInstanceOf(entityName)) {
 			throw new java.lang.IllegalArgumentException(String.format("The given object is not a %s", entityName));
 		}	
 

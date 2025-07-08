@@ -6,29 +6,27 @@ package nativemobileresources.proxies;
 
 public enum Enum_PermissionStatus
 {
-	unavailable(new java.lang.String[][] { new java.lang.String[] { "en_US", "Unavailable" } }),
-	denied(new java.lang.String[][] { new java.lang.String[] { "en_US", "Denied" } }),
-	limited(new java.lang.String[][] { new java.lang.String[] { "en_US", "Limited" } }),
-	granted(new java.lang.String[][] { new java.lang.String[] { "en_US", "Granted" } }),
-	blocked(new java.lang.String[][] { new java.lang.String[] { "en_US", "Blocked" } });
+	unavailable("bb7c3ef0-6087-4c7a-8464-a0776f3afa6b"),
+	denied("67b9c6a8-83b8-4c77-ade6-5a1a1ce00037"),
+	limited("0a9cfbc9-06cd-40b4-a9a1-57ee98016c46"),
+	granted("ae98f524-a32c-4465-ab12-bd0ea6f96012"),
+	blocked("5f749437-a8a9-4ee4-8d96-ee400f392af8");
 
-	private final java.util.Map<java.lang.String, java.lang.String> captions;
-
-	private Enum_PermissionStatus(java.lang.String[][] captionStrings)
+	private final java.lang.String i18nCaptionKey;
+	
+	private Enum_PermissionStatus(java.lang.String i18nCaptionKey)
 	{
-		this.captions = new java.util.HashMap<>();
-		for (java.lang.String[] captionString : captionStrings) {
-			captions.put(captionString[0], captionString[1]);
-		}
+		this.i18nCaptionKey = i18nCaptionKey;
 	}
 
 	public java.lang.String getCaption(java.lang.String languageCode)
 	{
-		return captions.getOrDefault(languageCode, "en_US");
+		String caption = com.mendix.core.Core.getInternationalizedString(languageCode, i18nCaptionKey);
+		return caption.isEmpty() ? getCaption() : caption;
 	}
 
 	public java.lang.String getCaption()
 	{
-		return captions.get("en_US");
+		return com.mendix.core.Core.getInternationalizedString("en_US", i18nCaptionKey);
 	}
 }
