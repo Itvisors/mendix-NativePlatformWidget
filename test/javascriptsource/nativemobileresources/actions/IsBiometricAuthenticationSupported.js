@@ -6,7 +6,7 @@
 // - the code between BEGIN EXTRA CODE and END EXTRA CODE
 // Other code you write will be lost the next time you deploy the project.
 import { Big } from "big.js";
-import ReactNativeBiometrics from 'react-native-biometrics';
+import { isSensorAvailable } from '@sbaiahmed1/react-native-biometrics';
 
 // BEGIN EXTRA CODE
 // END EXTRA CODE
@@ -16,10 +16,8 @@ import ReactNativeBiometrics from 'react-native-biometrics';
  */
 export async function IsBiometricAuthenticationSupported() {
 	// BEGIN USER CODE
-    // Documentation https://github.com/smallcase/react-native-simple-biometrics
-    const rnBiometrics = new ReactNativeBiometrics();
-    return rnBiometrics
-        .isSensorAvailable()
+    // Documentation https://github.com/sbaiahmed1/react-native-biometrics
+    return isSensorAvailable()
         .then(result => result.available)
         .catch(() => false);
 	// END USER CODE

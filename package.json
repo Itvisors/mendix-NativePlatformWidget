@@ -1,7 +1,7 @@
 {
   "name": "nativeplatformwidget",
   "widgetName": "NativePlatformWidget",
-  "version": "6.0.0",
+  "version": "6.1.0",
   "description": "Show content specific for a platform",
   "copyright": "ITvisors 2020",
   "author": "Marcel Groeneweg",
@@ -22,7 +22,7 @@
     "release": "pluggable-widgets-tools release:native"
   },
   "devDependencies": {
-    "@mendix/pluggable-widgets-tools": "^10.12.1"
+    "@mendix/pluggable-widgets-tools": "11.3.0"
   },
   "dependencies": {
     "react-native-device-info": "14.0.4"

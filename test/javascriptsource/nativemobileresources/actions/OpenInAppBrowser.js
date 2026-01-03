@@ -25,9 +25,9 @@ export async function OpenInAppBrowser(url, toolbarColor, iosDismissButtonStyle,
         return Promise.reject(new Error("Input parameter 'url' is required"));
     }
     const options = {
-        barTintColor: toolbarColor,
-        controlTintColor: toolbarColor,
-        dismissButtonStyle: iosDismissButtonStyle,
+        barTintColor: toolbarColor, // iOS toolbar color
+        controlTintColor: toolbarColor, // iOS control buttons color
+        dismissButtonStyle: iosDismissButtonStyle, // iOS dismiss button style
         showTitle: androidShowTitle // Android show title
     };
     try {
